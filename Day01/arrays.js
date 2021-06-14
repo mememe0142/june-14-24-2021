@@ -13,3 +13,6 @@ romanNumerals["III"] = 3;
 for(let key in romanNumerals) {
     console.log(key, romanNumerals[key]);
 }
+let coll = [];
+coll.push(1);
+coll.push(3);
