@@ -8,3 +8,9 @@
 * It gives you extensions to work with file systems, databases, http etc
 
 ### Javascript
+
+* Functions are first-class citizens
+* You can define a function with any number of arguments, but invoke it with any number of arguments
+* You can define a function with the same name any number of times, the latest definition overrides the previous ones
+* All the function definitions are run first; then the execution(intepretation) starts from the 1st line
+
