@@ -19,3 +19,4 @@ doSomething(function() {
     console.log("I am confused");
 });
 doSomething(12);
+doSomething(() => console.log("arrow"));
