@@ -9,15 +9,25 @@ fs.writeFile(__dirname + "/training2.txt",
                 console.log("Error writing file", err.message);
             } else {
                 console.log("Done");
+                fs.readFile(__dirname + "/training2.txt", null, (err, data) => {
+                    if(err) {
+                        console.log("Error reading file", err.message);
+                    } else {
+                        console.log(data.toString());
+                    }
+                });
+
+
             }
 });
-fs.readFile(__dirname + "/training2.txt", null, (err, data) => {
-    if(err) {
-        console.log("Error reading file", err.message);
-    } else {
-        console.log(data.toString());
-    }
-});
+//Not the correct place to write
+// fs.readFile(__dirname + "/training2.txt", null, (err, data) => {
+//     if(err) {
+//         console.log("Error reading file", err.message);
+//     } else {
+//         console.log(data.toString());
+//     }
+// });
 console.log("end of program");
 
 
