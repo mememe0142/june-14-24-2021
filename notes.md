@@ -14,3 +14,12 @@
 * You can define a function with the same name any number of times, the latest definition overrides the previous ones
 * All the function definitions are run first; then the execution(intepretation) starts from the 1st line
 
+### Node JS ecosystem
+
+* Maven in Java; 
+* npm __Node Package manager__ comes with NodeJS
+
+* pom.xml in Maven
+* __package.json__ in Node
+
+* __npm init__ is the command to initialize a NodeJS project

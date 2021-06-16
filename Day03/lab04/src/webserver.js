@@ -10,8 +10,6 @@ const processIndex = (req, res) => {
     }
 };
 
-const server = http.createServer(processIndex);
-
 const readIndexFile = (res) => {
     fs.readFile(indexFile, (err, data) => {
         if (!err) {
@@ -21,6 +19,8 @@ const readIndexFile = (res) => {
         }
     });
 }
+
+const server = http.createServer(processIndex);
 
 server.listen(port, () => {
     console.log("Server started and running in ", port);
