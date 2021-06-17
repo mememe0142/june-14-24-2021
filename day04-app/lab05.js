@@ -9,6 +9,7 @@ console.log(os.userInfo());
 
 //java -DPORT=7000 lab05
 //PORT=7000 node lab05.js
+//name=value name=value node filename.js
 let port = process.env.PORT || 8080;
 let calc = new Calculator();
 
