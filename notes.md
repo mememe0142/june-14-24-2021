@@ -23,3 +23,4 @@
 * __package.json__ in Node
 
 * __npm init__ is the command to initialize a NodeJS project
+* __sudo npm i --save express__
