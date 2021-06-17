@@ -4,8 +4,16 @@
   "description": "This is a sample web application using express",
   "main": "index.js",
   "scripts": {
+    "dev": "node index.js",
+    "lab05": "PORT=7000 nodemon lab05.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

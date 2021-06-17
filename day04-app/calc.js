@@ -1,6 +1,6 @@
 class Calculator {
     add(a, b) {
-        this.sleep(10);
+        //this.sleep(10);
         return a + b;
     }
 

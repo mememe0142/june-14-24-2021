@@ -1,11 +1,25 @@
+var i = 10;
+i = "String";
+i = true;
+
 let express = require('express');
 let app = express();
+
+let person = { name: "Sam", age: 12 };
+
+app.get("/person", (req, res) => {
+    res.json(person);
+});
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
 
 app.post("/login", (req, res) => {
     res.end("Login page");
 });
 
-app.get("/", (req, res) => {
+app.get("/hello", (req, res) => {
     res.end("Hello express js");
 });
 

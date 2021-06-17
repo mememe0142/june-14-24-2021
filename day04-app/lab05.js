@@ -1,14 +1,22 @@
-let app = require('express')();
-let Calculator = require('./calc');
+const app = require('express')();
+const process = require('process');
+const Calculator = require('./calc');
+const os = require('os');
 
-let port = 8080;
+console.log(os.cpus().length);
+console.log(os.platform());
+console.log(os.userInfo());
+
+//java -DPORT=7000 lab05
+//PORT=7000 node lab05.js
+let port = process.env.PORT || 8080;
 let calc = new Calculator();
 
 
 app.get("/calc/add/:a/:b", (req, res) => {
     let { a, b } = req.params;
     let sum = calc.add(parseInt(a), parseInt(b));
-    res.end(`Sum: ${sum}`);
+    res.end(`Sum is: ${sum}`);
     //res.end("Sum:" + sum);
 });
 
