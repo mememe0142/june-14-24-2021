@@ -1,4 +1,4 @@
-= Lab 04
+= Lab 06
 
 [abstract]
 In this lab you'll implement a guessing game(!!!) using NodeJS.
