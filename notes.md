@@ -24,3 +24,13 @@
 
 * __npm init__ is the command to initialize a NodeJS project
 * __sudo npm i --save express__
+
+### Middleware
+
+* Mechanism to plugin external functionality
+* Similar to servlet filters or interceptors
+* Plugin in the functionality using __app.use(...)__ method
+* You can plugin a middleware to a specific route as well __app.get('/url', [middleware], (req, res) =>{})__
+* Custom middlewares can be built 
+* A simple function that accepts request, response and next. __next()__ is the call to the next library in the middleware chain
+
