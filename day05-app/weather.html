@@ -2,7 +2,13 @@
     <head>
         <script>
             const getTemperature = () => {
+                //fetch
+                let city = document.getElementById("city").value;
 
+                fetch("http://localhost:8080/temperature/" + city, { method: "GET" })
+                    .then(res => res.text())
+                    .then(data => document.getElementById("result").innerHTML = data)
+                    .catch(err => document.getElementById("result").innerHTML = err.message);
             };
         </script>
     </head>
