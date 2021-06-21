@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            const play = () => {
+                let guess = document.getElementById("guess").value;
+                fetch(`/play?guess=${guess}`, { method: 'POST' })
+                    .then(res => res.json())
+                    .then(data => {
+                        document.getElementById('message').innerHTML = data.message;
+                        document.getElementById('attempts').innerHTML = `Attempts: ${data.attempts}`;
+                    });
+            };
+        </script>
+    </head>
+    <body>
+        Enter your guess <input type="number" id="guess"> <br/>
+        <button onclick="play()">Play</button>
+        <h2 id="message"></h2>
+        <h3 id="attempts"></h3>
+    </body>
+</html>
