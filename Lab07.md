@@ -22,7 +22,7 @@
 	]	
 ```
 
-<br/> <br/>
+<br/>
 
 * Build the following API to perform CRUD operations on the movies collection
 
