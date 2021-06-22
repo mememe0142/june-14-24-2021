@@ -7,7 +7,6 @@
 	- [src]
 		- movies_db.js
 		- movies_controller.js
-	- [public]
 	- package.json
 	- index.js
 	
