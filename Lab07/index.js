@@ -8,7 +8,6 @@ const moviesController = new MoviesController();
 app.get('/api/v0/movies/:year', (req, res) => {
     let { year } = req.params;
     moviesController.getMoviesByYearV0(parseInt(year), res);
-        
 });
 
 app.get(routes.GET_MOVIES_BY_YEAR, (req, res) => {
