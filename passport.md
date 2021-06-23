@@ -50,6 +50,8 @@ app.post('/login', [express.json()], (req, res) => {
     passport.authenticate('mylocalstrat', {session: false }, (err, user, info) => {
         if(err) {
             res.end(err.message);
+        } else if(info) {
+            res.end(info.message);
         } else {
             res.redirect('/home');
         }
