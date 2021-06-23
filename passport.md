@@ -16,7 +16,7 @@ app.post('/login', [express.json()], (req, res) => {
 });
 
 app.get('/home',  function (req, res) {
-    
+    res.end("Welcome home");
 })
 
 app.listen(8080, () => console.log("Server started in 8080"));
