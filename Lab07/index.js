@@ -28,7 +28,7 @@ app.get(routes.GET_MOVIE_BY_NAME, (req, res) => {
 });
 
 app.delete(routes.DELETE_MOVIE_BY_NAME, (req, res) => {
-    let {name} = req.params;
+    let { name } = req.params;
     moviesController
         .deleteMovieByName(name)
         .then(data => res.json(data))
