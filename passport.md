@@ -15,7 +15,7 @@ app.post('/login', [express.json()], (req, res) => {
     
 });
 
-app.post('/home',  function (req, res) {
+app.get('/home',  function (req, res) {
     
 })
 
