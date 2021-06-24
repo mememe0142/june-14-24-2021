@@ -34,3 +34,15 @@
 * Custom middlewares can be built 
 * A simple function that accepts request, response and next. __next()__ is the call to the next library in the middleware chain
 
+### npm
+
+* Create an account in https://npmjs.com
+* Create a NodeJS application (or package)
+* __sudo npm login__ to login to your account
+* __sudo npm publish__
+* If you want to remove, __sudo npm unpublish__
+* Semver: __major.minor.patchrelease__
+
+
+
+
