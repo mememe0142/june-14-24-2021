@@ -48,6 +48,8 @@
 
 * sudo npm i -g typescript
 * sudo npm i -g @types/node
+* Write code in __.ts__ file
+* Run __tsc__ command which compiles ts files to js files
 * sudo npm init
 * sudo npm i --save express
 * sudo npm i --save-dev @types/express
