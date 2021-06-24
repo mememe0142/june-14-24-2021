@@ -44,5 +44,14 @@
 * Semver: __major.minor.patchrelease__
 
 
+### NodeJS with TypeScript
+
+* sudo npm i -g typescript
+* sudo npm i -g @types/node
+* sudo npm init
+* sudo npm i --save express
+* sudo npm i --save-dev @types/express
+* tsc --init
+
 
 

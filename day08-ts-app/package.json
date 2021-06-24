@@ -1,0 +1,19 @@
+{
+  "name": "day08-ts-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "start-server": "tsc && node ./app/server.js",
+    "start": "nodemon -e ts -w ./src -x npm run start-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12"
+  }
+}
